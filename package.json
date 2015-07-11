@@ -1,0 +1,19 @@
+{
+  "name": "my-dash",
+  "version": "0.1.0",
+  "description": "A recreation of the original lodash library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbgit/my-dash.git"
+  },
+  "author": "Michael Bowen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrbgit/my-dash/issues"
+  },
+  "homepage": "https://github.com/mrbgit/my-dash#readme"
+}

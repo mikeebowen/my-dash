@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/mrbgit/my-dash/issues"
   },
-  "homepage": "https://github.com/mrbgit/my-dash#readme"
+  "homepage": "https://github.com/mrbgit/my-dash#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "expect": "^1.6.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jscs": "^1.8.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "mocha": "^2.2.5"
+  }
 }

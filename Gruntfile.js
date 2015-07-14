@@ -42,22 +42,6 @@
           }
         }
       },
-      //create mocha task
-      mocha: {
-        src: ['test/**/*.js'],
-        options: {
-          node: true,
-          globals: {
-            describe: true,
-            it: true,
-            before: true,
-            after: true,
-            beforeEach: true,
-            afterEach: true,
-            res: true,
-            expect: true
-          }
-      },
       simplemocha: {
         dev: {
           src: ['test/**/*.js']

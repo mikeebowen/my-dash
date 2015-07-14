@@ -2,4 +2,5 @@
 
 var chai = require('chai');
 var expect = chai.expect;
-var chunk =
+var chunk = ('../../methods/array/chunk');
+

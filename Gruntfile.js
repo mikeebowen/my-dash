@@ -42,6 +42,27 @@
           }
         }
       },
+      //create mocha task
+      mocha: {
+        src: ['test/**/*.js'],
+        options: {
+          node: true,
+          globals: {
+            describe: true,
+            it: true,
+            before: true,
+            after: true,
+            beforeEach: true,
+            afterEach: true,
+            res: true,
+            expect: true
+          }
+      },
+      simplemocha: {
+        dev: {
+          src: ['test/**/*.js']
+        }
+      },
       // create jscs task
       jscs: {
         dev: {
@@ -53,4 +74,5 @@
   });
   //register linting task
   grunt.registerTask('lint', ['jshint:dev', 'jshint:mocha']);
+  grunt.registerTask('test', ['simplemocha:dev']);
 };

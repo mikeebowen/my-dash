@@ -9,5 +9,6 @@ describe('Test Compact Function', function (done) {
     var testArr = [1, false, 0, '', 'eggplant'];
     var returnedArr = compact(testArr);
     expect(returnedArr).to.eql([1, 'eggplant']);
-  })
-})
+    done();
+  });
+});

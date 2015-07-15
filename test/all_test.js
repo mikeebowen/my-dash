@@ -1,6 +1,7 @@
 'use strict';
 
 require('./array_tests/chunk_test');
+require('./array_tests/compact_test')
 
 var chai = require('chai');
 var expect = chai.expect;

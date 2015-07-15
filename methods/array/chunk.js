@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (arr, num) {
+module.exports = function chunk (arr, num) {
   //create variables for function, newArr to return and start and end to define the beginning and end of the slices of the array
   var newArr = [];
   var start = 0;
@@ -15,12 +15,8 @@ module.exports = function (arr, num) {
   }
   //loop over the arr array and push the values into an array and push that array to the newArr array
   for (var i = 0; i < arr.length; i++) {
-    //temp array to hold values to be pushed to newArray
-    var tmpArr = [];
-    //push slice from start to end of input array into tmpArray
-    tmpArr.push(arr.slice(start, end));
     //push tmpArr array into newArr array
-    newArr.push(tmpArr);
+    newArr.push(arr.slice(start, end));
     //if num is greater than or equal to the arr length, return the newArr array
     if (end >= arr.length) {
       return newArr;

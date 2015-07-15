@@ -9,7 +9,7 @@ This is my attempt at recreating the functionality of [lodash](https://github.co
 chunk([1, 2, 3, 4, 5, 6], 2)
 ```
 
-returns [[1, 2], [3, 4], [5, 6]]
+returns ```[[1, 2], [3, 4], [5, 6]]```
 
 and
 
@@ -17,4 +17,4 @@ and
 chunk([1, 2, 3, 4, 5, 6, 7], 2)
 ```
 
-returns [[1, 2, 3], [4, 5, 6], [7]]
+returns ```[[1, 2, 3], [4, 5, 6], [7]]```

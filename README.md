@@ -13,15 +13,18 @@ chunk([1, 2, 3, 4, 5, 6], 2)
 ```
 
 returns ```JavaScript
-[[1, 2], [3, 4], [5, 6]]```
+[[1, 2], [3, 4], [5, 6]]
+```
 
 and
 
 ```JavaScript
-chunk([1, 2, 3, 4, 5, 6, 7], 3)```
+chunk([1, 2, 3, 4, 5, 6, 7], 3)
+```
 
 returns ```JavaScript
-[[1, 2, 3], [4, 5, 6], [7]]```
+[[1, 2, 3], [4, 5, 6], [7]]
+```
 
 ######compact
 
@@ -32,5 +35,6 @@ compact([1, 0, false, 'eggplant'])
 ```
 
 returns ```JavaScript
-[1, 'eggplant']```
+[1, 'eggplant']
+```
 

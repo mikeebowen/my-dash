@@ -12,7 +12,9 @@ This is my attempt at recreating the functionality of [lodash](https://github.co
 chunk([1, 2, 3, 4, 5, 6], 2)
 ```
 
-returns ```[[1, 2], [3, 4], [5, 6]]```
+returns ```JavaScript
+[[1, 2], [3, 4], [5, 6]]
+```
 
 and
 
@@ -20,4 +22,17 @@ and
 chunk([1, 2, 3, 4, 5, 6, 7], 3)
 ```
 
-returns ```[[1, 2, 3], [4, 5, 6], [7]]```
+returns ```JavaScript
+[[1, 2, 3], [4, 5, 6], [7]]```
+
+######compact
+
+- Takes one argument that is an array and returns a new array with the falsey values removed. So:
+
+```JavaScript
+compact([1, 0, false, 'eggplant'])
+```
+
+returns ```JavaScript
+[1, 'eggplant']```
+

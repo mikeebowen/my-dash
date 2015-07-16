@@ -12,7 +12,8 @@ This is my attempt at recreating the functionality of [lodash](https://github.co
 chunk([1, 2, 3, 4, 5, 6], 2)
 ```
 
-returns ```JavaScript
+returns
+```JavaScript
 [[1, 2], [3, 4], [5, 6]]
 ```
 
@@ -22,7 +23,8 @@ and
 chunk([1, 2, 3, 4, 5, 6, 7], 3)
 ```
 
-returns ```JavaScript
+returns
+```JavaScript
 [[1, 2, 3], [4, 5, 6], [7]]
 ```
 
@@ -34,7 +36,8 @@ returns ```JavaScript
 compact([1, 0, false, 'eggplant'])
 ```
 
-returns ```JavaScript
+returns
+```JavaScript
 [1, 'eggplant']
 ```
 

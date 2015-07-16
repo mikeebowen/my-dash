@@ -2,15 +2,5 @@
 
 require('./array_tests/chunk_test');
 require('./array_tests/compact_test')
-
-var chai = require('chai');
-var expect = chai.expect;
-
-describe('test that tests run', function (done) {
-
-  it('should run a test', function (done) {
-    expect(true).to.eql(true);
-    done();
-  });
-
-});
+require('./array_tests/difference_test');
+require('./simple_test');

@@ -42,3 +42,14 @@ returns
 [1, 'eggplant']
 ```
 
+######drop
+
+ - Takes the first argument as an array and the second as a number and removes that many values from the beginnin of the array. So
+
+ ```JavaScript
+ drop([1, 2, 3, 4], 3)
+ ```
+ returns
+ ```JavaScript
+ [4]
+ ```

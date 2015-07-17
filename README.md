@@ -42,9 +42,22 @@ returns
 [1, 'eggplant']
 ```
 
+######difference
+- Takes two arguments, both arrays and returns a new array with the values from the second array removed from the first. So:
+
+```JavaScript
+difference(['apple', 'banana', 'grape'], ['apple', 'banana'])
+```
+
+returns
+
+```JavaScript
+['grape']
+```
+
 ######drop
 
- - Takes the first argument as an array and the second as a number and removes that many values from the beginnin of the array. So
+ - Takes the first argument as an array and the second as a number and removes that many values from the beginning of the array and returns a new array. So
 
  ```JavaScript
  drop([1, 2, 3, 4], 3)

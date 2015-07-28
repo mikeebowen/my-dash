@@ -57,7 +57,7 @@ module.exports = function (grunt) {
     simplemocha: {
       dev: {
         //tell simple mocha where the test files are
-        src: ['test/**/*.js']
+        src: ['test/all_test.js']
       }
     }
 

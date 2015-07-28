@@ -1,16 +1,17 @@
 'use strict';
 
- module.exports = function (grunt) {
+module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-jscs');
 
   //initialize grunt
   grunt.initConfig({
-    //create jshint task
+
+    // create jshint task
     jshint: {
       dev: {
-        //tell jshint what to check
+        // tell jshint what check
         src: ['Gruntfile.js', 'methods/**/*.js'],
         options: {
           node: true,
@@ -25,9 +26,10 @@
           }
         }
       },
-      //tell mocha where test files are
+
       mocha: {
-        src: ['test/**/*.js'],
+        // tell mocha where test files are
+        src: ['test/all_test.js'],
         options: {
           node: true,
           globals: {
@@ -42,11 +44,6 @@
           }
         }
       },
-      simplemocha: {
-        dev: {
-          src: ['test/**/*.js']
-        }
-      },
       // create jscs task
       jscs: {
         dev: {
@@ -54,9 +51,22 @@
           src: ['<%= jshint.dev.src %>', '<%= jshint.mocha.src %>']
         }
       }
+    },
+
+    //create simplemocha task
+    simplemocha: {
+      dev: {
+        //tell simple mocha where the test files are
+        src: ['test/all_test.js']
+      }
     }
+
   });
-  //register linting task
-  grunt.registerTask('lint', ['jshint:dev', 'jshint:mocha']);
+  // register linting task
+  grunt.registerTask('lint', ['jshint:dev', 'jshint:mocha', 'jshint:jasmine']);
+  // register mocha test task
   grunt.registerTask('test', ['simplemocha:dev']);
+  // register default task
+  grunt.registerTask('default', ['test']);
+
 };
